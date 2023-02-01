@@ -29,7 +29,7 @@
         <div class="wrapper">
             <div class="sidebar">
                 <div class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
-                    <img class="w-100 img-fluid mb-4" src="img/profile.jpg" alt="Image">
+                    <img class="w-100 img-fluid mb-4" style="border-radius: 20px; box-shadow:0px 0px 16px rgb(153, 143, 143);" src="img/profile.jpg" alt="Image">
                     <h1 class="mt-2 text-white">Hamza Nawabi</h1>
                     <div class="mb-4" style="height: 22px;">
                         <h4 class="typed-text-output d-inline-block text-body"></h4>
@@ -163,6 +163,15 @@
                                 </div>
                                 <div class="progress">
                                     <div class="progress-bar bg-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-2">Git & Github</p>
+                                    <p class="mb-2">98%</p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                         </div>
@@ -330,7 +339,7 @@
 
                 <!-- Subscribe Start -->
                 <div class="container bg-dark py-5 px-0">
-                    <div class="bg-light text-center p-5">
+                    <div class="bg-light text-center p-md-5">
                         <h1 class="text-white font-weight-bold">Subscribe My Newsletter</h1>
                         <p class="text-white">Subscribe and get my latest article in your inbox</p>
                         <form class="form-inline justify-content-center">
@@ -397,7 +406,7 @@
                                 <!-- first image -->
                                 <div class="col-md-6 mb-4 portfolio-item first">
                                     <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" style="height:200px;"  src="img/startupstan/firstStartupstan.PNG" alt="">
+                                        <img class="img-fluid w-100" style="height:200px;object-fit:cover;"  src="img/startupstan/firstStartupstan.PNG" alt="">
                                         <div class="portfolio-btn d-flex align-items-center justify-content-center">
                                             <a href="img/startupstan/firstStartupstan.PNG" data-lightbox="portfolio">
                                                 <i class="fa fa-4x fa-plus text-white"></i>
@@ -412,13 +421,13 @@
                                                 <!-- <i class="fa fa-4x fa-plus text-white"></i> -->
                                             </a>
                                         </div>
-                                        <a href="https://nawabi-startupstan.netlify.app" class="text-muted">Check This Project Online</a>
+                                        <a href="https://nawabi-startupstan.netlify.app" class="text-muted">Link This Project</a>
                                     </div>
                                 </div>
                                 <!-- second image -->
                                 <div class="col-md-6 mb-4 portfolio-item second">
                                     <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" style="height:200px;" src="img/logistic/firstLogistc.PNG" alt="">
+                                        <img class="img-fluid w-100" style="height:200px;object-fit:cover;" src="img/logistic/firstLogistc.PNG" alt="">
                                         <div class="portfolio-btn d-flex align-items-center justify-content-center">
                                             <a href="img/logistic/firstLogistc.PNG" data-lightbox="portfolio">
                                                 <i class="fa fa-4x fa-plus text-white"></i>
@@ -442,7 +451,7 @@
                                 <!-- third image -->
                                 <div class="col-md-6 mb-4 portfolio-item first">
                                     <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" style="height:200px;"  src="img/portfilo/firstPortfilo.PNG" alt="">
+                                        <img class="img-fluid w-100" style="height:200px;object-fit:cover;"  src="img/portfilo/firstPortfilo.PNG" alt="">
                                         <div class="portfolio-btn d-flex align-items-center justify-content-center">
                                             <a href="img/portfilo/firstPortfilo.PNG" data-lightbox="portfolio">
                                                 <i class="fa fa-4x fa-plus text-white"></i>
@@ -451,19 +460,19 @@
                                                 <!-- <i class="fa fa-4x fa-plus text-white"></i> -->
                                             </a>
                                         </div>
-                                        <a href="https://nawabi-cv.netlify.app" class="text-muted">Check This Project Online</a>
+                                        <a href="https://nawabi-cv.netlify.app" class="text-muted">Link This Project</a>
                                     </div>
                                 </div>
                                 <!-- fourth image -->
                                 <div class="col-md-6 mb-4 portfolio-item first">
                                     <div class="position-relative overflow-hidden mb-2">
-                                        <img class="img-fluid w-100" style="height:200px;"  src="img/cv/CV profilo.PNG" alt="">
+                                        <img class="img-fluid w-100" style="height:200px;object-fit:cover;"  src="img/cv/CV profilo.PNG" alt="">
                                         <div class="portfolio-btn d-flex align-items-center justify-content-center">
                                             <a href="img/cv/CV profilo.PNG" data-lightbox="portfolio">
                                                 <i class="fa fa-4x fa-plus text-white"></i>
                                             </a>
                                         </div>
-                                        <a href="https://hamza-nawabi.netlify.app" class="text-muted">Check This Project Online</a>
+                                        <a href="https://hamza-nawabi.netlify.app" class="text-muted">Link This Project</a>
                                     </div>
                                 </div>
                             </div>
@@ -482,32 +491,32 @@
                         <div class="col-12">
                             <div class="contact-form">
                                 <div id="success"></div>
-                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                <form name="sentMessage" action="mailto:h.nawabi007@gmail.com" method="post" enctype="text/plain" id="contactForm" novalidate="novalidate">
                                     <div class="form-row">
                                         <div class="control-group col-sm-6">
-                                            <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                            <input type="text" class="form-control p-4" name="name" placeholder="Your Name"
                                                 required="required" data-validation-required-message="Please enter your name" />
                                             <p class="help-block text-danger"></p>
                                         </div>
                                         <div class="control-group col-sm-6">
-                                            <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                            <input type="email" class="form-control p-4" name="email" placeholder="Your Email"
                                                 required="required" data-validation-required-message="Please enter your email" />
                                             <p class="help-block text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="control-group">
-                                        <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                        <input type="text" class="form-control p-4" name="subject" placeholder="Subject"
                                             required="required" data-validation-required-message="Please enter a subject" />
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="control-group">
-                                        <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                        <textarea class="form-control py-3 px-4" rows="5" name="message" placeholder="Message"
                                             required="required"
                                             data-validation-required-message="Please enter your message"></textarea>
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div>
-                                        <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Send Message</button>
+                                        <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton" >Send Message</button>
                                     </div>
                                 </form>
                             </div>
@@ -559,7 +568,8 @@
         <!-- Contact Javascript File -->
         <script src="mail/jqBootstrapValidation.min.js"></script>
         <script src="mail/contact.js"></script>
-
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase.js"></script>
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
     </body>
