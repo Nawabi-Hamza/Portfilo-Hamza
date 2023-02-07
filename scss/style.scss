@@ -1,12 +1,14 @@
 /******* Bootstrap Theming ********/
 
-$primary: red;
+$primary: darkred;
 $light: black;
 $dark: black;
 
-$font-family-base: 'Poppins', sans-serif;
+// $font-family-base: 'Poppins', sans-serif;
+$font-family-base:monospace;
 
-$headings-font-family: 'Averia Serif Libre', cursive;
+// $headings-font-family: 'Averia Serif Libre', cursive;
+$headings-font-family: monospace;
 
 $body-bg: $light;
 
@@ -23,6 +25,7 @@ $enable-shadows: false;
 
 /********** Layout Style **********/
 .wrapper {
+    
     position: relative;
     margin: 0 auto;
     width: 100%;
@@ -35,6 +38,11 @@ $enable-shadows: false;
     float: left;
     padding: 30px;
     background: rgb(0, 0, 0);
+}
+
+.wrapper .sidebar img{
+    border-radius: 20px;
+    box-shadow:0px 0px 16px $primary;
 }
 
 .wrapper .sidebar-icon {
