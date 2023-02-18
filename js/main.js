@@ -23,7 +23,9 @@
             smartBackspace: false,
             loop: true
         });
+      
     }
+    
     
     
     // Skills
