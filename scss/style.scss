@@ -1,8 +1,8 @@
 /******* Bootstrap Theming ********/
 
-$primary: darkred;
-$light: black;
-$dark: black;
+$primary: rgb(6, 126, 165);
+$light: lightblue;
+$dark: lightblue;
 
 // $font-family-base: 'Poppins', sans-serif;
 $font-family-base:monospace;
@@ -23,6 +23,7 @@ $enable-shadows: false;
 @import "bootstrap/scss/bootstrap";
 
 
+
 /********** Layout Style **********/
 .wrapper {
     
@@ -37,12 +38,54 @@ $enable-shadows: false;
     width: 100%;
     float: left;
     padding: 30px;
-    background: rgb(0, 0, 0);
+    background: $dark;
 }
 
 .wrapper .sidebar img{
-    border-radius: 20px;
+    /* border: 0px solid #ddd; */
+    border-radius: 4px;
+    padding: 5px;
+    /* background: linear-gradient(120deg ,$primary,$dark,$primary) ; */
+    background: linear-gradient(-45deg, lightblue, rgb(133, 133, 231), #23a6d5, black);
+    border-radius: 14px;
+    background-size: 240%;
+    animation: backgroundCange 5s ease infinite;
+    /* transition: .5s; */
     box-shadow:0px 0px 16px $primary;
+    /* box-shadow:0px 0px 16px linear-gradient(red,yellow,blue) ; */
+}
+@keyframes backgroundCange {
+    /* 0%{
+        background: linear-gradient(90deg,$primary,$dark,$primary) ;
+    }
+    25%{
+        background: linear-gradient(120deg,$primary,$dark,$primary) ;
+    }
+    50%{
+        background: linear-gradient(180deg,$primary,$dark,$primary) ;
+    }
+    75%{
+        background: linear-gradient(260deg,$primary,$dark,$primary);
+    }
+    100%{
+        background: linear-gradient(360deg,$primary,$dark,$primary);
+    } */
+    /* from{
+        background: linear-gradient(20deg,$primary,$dark,$primary) ;
+    }
+    to{
+        background: linear-gradient(260deg,$primary,$dark,$primary) ;
+    } */
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+    
 }
 
 .wrapper .sidebar-icon {
@@ -54,7 +97,7 @@ $enable-shadows: false;
     width: 100%;
     padding: 15px;
     float: left;
-    background: dark;
+    background: $dark;
 }
 
 .wrapper .sidebar,
@@ -351,5 +394,5 @@ h4, h5, h6 {
     list-style-type: none;
   }
  body .wrapper .content{
-    background:black;
+    background:$dark;
   }
