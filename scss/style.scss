@@ -40,42 +40,28 @@ $enable-shadows: false;
     padding: 30px;
     background: $dark;
 }
+.wrapper .sidebar{
+    background: linear-gradient(-45deg, lightblue, rgb(231, 149, 133), #23a6d5, black);
+    background-size: 240%;
+    animation: backgroundCange 5s ease infinite;
 
+}
 .wrapper .sidebar img{
     /* border: 0px solid #ddd; */
     border-radius: 4px;
     padding: 5px;
     /* background: linear-gradient(120deg ,$primary,$dark,$primary) ; */
-    background: linear-gradient(-45deg, lightblue, rgb(133, 133, 231), #23a6d5, black);
-    border-radius: 14px;
+    background: linear-gradient(-45deg, lightblue, rgb(231, 149, 133), #23a6d5, black);
+    /* border-radius: 14px; */
+    border-radius:30% 70% 70% 30% / 30% 30% 70% 70% ;
     background-size: 240%;
     animation: backgroundCange 5s ease infinite;
     /* transition: .5s; */
     box-shadow:0px 0px 16px $primary;
+    padding:10px;
     /* box-shadow:0px 0px 16px linear-gradient(red,yellow,blue) ; */
 }
 @keyframes backgroundCange {
-    /* 0%{
-        background: linear-gradient(90deg,$primary,$dark,$primary) ;
-    }
-    25%{
-        background: linear-gradient(120deg,$primary,$dark,$primary) ;
-    }
-    50%{
-        background: linear-gradient(180deg,$primary,$dark,$primary) ;
-    }
-    75%{
-        background: linear-gradient(260deg,$primary,$dark,$primary);
-    }
-    100%{
-        background: linear-gradient(360deg,$primary,$dark,$primary);
-    } */
-    /* from{
-        background: linear-gradient(20deg,$primary,$dark,$primary) ;
-    }
-    to{
-        background: linear-gradient(260deg,$primary,$dark,$primary) ;
-    } */
     0% {
 		background-position: 0% 50%;
 	}
