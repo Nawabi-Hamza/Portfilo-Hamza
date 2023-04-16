@@ -8953,7 +8953,7 @@ a.text-dark:hover, a.text-dark:focus {
   background: lightblue;
 }
 
-.wrapper .sidebar {
+.wrapper .sidebar, .my-color-animation {
   background: linear-gradient(-45deg, lightblue, rgb(231, 149, 133), #23a6d5, black);
   background-size: 240%;
   animation: backgroundCange 5s ease infinite;
@@ -9019,8 +9019,8 @@ a.text-dark:hover, a.text-dark:focus {
     content: "";
     width: 100%;
     height: 30px;
-    background: lightblue;
-    z-index: 9;
+    /* background: $light; */
+    /* z-index: 9; */
   }
   .wrapper .content::before {
     top: 0;
